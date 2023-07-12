@@ -1,0 +1,14 @@
+.footer {
+    background-color: #8f729c4b;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  

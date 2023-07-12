@@ -1,0 +1,21 @@
+.bar {
+    display: flex;
+    background-color: rgb(76, 59, 88);
+    justify-content: center;
+    height: 4rem;
+    width: 55rem;
+    margin-left: 15rem;
+    
+    
+  }
+  
+  .bar a {
+    margin: 0 90px;
+  }
+  
+  .bar img {
+    width: 70px;
+    height: 40px;
+    padding-top: 1rem;
+  }
+  
