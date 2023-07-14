@@ -1,50 +1,68 @@
 .services-section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    padding: 20px;
-    
-  }
-  
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.service-card {
+  flex: 0 0 300px;
+  height: 400px; /* Set a fixed height for all service cards */
+  margin: 10px;
+  padding: 25px;
+  background-color: rgb(76, 59, 88);
+  border-radius: 8px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.card-content h2{
+  color: rgba(250, 235, 215, 0.637);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(177, 175, 56);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-link svg {
+  margin-left: 5px;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 767px) {
   .service-card {
-    width: 20rem;
-    height: 20rem;
-    padding: 25px;
-    background-color: rgb(76, 59, 88);
-    border-radius: 8px;
-    font-size: 20px;
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
-  
-  .service-card h2 {
-    margin-bottom: 10px;
-    color: rgba(214, 202, 202, 0.918);
-    font-family: sans-serif;
-  }
-  
-  .service-card p {
-    margin-bottom: 20px;
-    font-family: sans-serif;
-    color: rgb(1, 2, 2);
-  }
-  
-  .service-card a {
-    display: flex;
-    align-items: center;
-    color: rgb(177, 175, 56);
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .service-card a i {
-    margin-left: 5px;
-  }
-  .safes {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 2rem;
-  }
-  .app {
-    height: 220px;
-    width: 250px;
-  }
+}

@@ -1,21 +1,27 @@
 .bar {
-    display: flex;
-    background-color: rgb(76, 59, 88);
-    justify-content: center;
-    height: 4rem;
-    width: 55rem;
-    margin-left: 15rem;
-    
-    
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  padding: 0 1rem;
+}
+
+.bar a {
+  margin: 0 1.5rem;
+}
+
+.bar img {
+  height: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: auto;
   }
-  
+
   .bar a {
-    margin: 0 90px;
+    margin: 0.5rem;
   }
-  
-  .bar img {
-    width: 70px;
-    height: 40px;
-    padding-top: 1rem;
-  }
-  
+}
