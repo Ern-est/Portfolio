@@ -1,0 +1,42 @@
+
+
+.split-about {
+    display: flex;
+  }
+  
+  .left-aboutsection{
+    width: 60%;
+  
+  }
+  .right-aboutsection{
+    width: 40%;
+  }
+  
+  .about-content {
+      display: flex;
+      align-items: center;
+    }   
+    .about-card{
+      flex: 0 0 auto; /*disable flex grow and shrink */
+      height: 540px;
+      width: 400px;
+      margin-left: 22rem;
+      margin-top: 1rem;
+    
+    } 
+  
+    .about-text {
+      flex: 1 1 auto; /* allow flex grow and shrink } */
+      margin-right: 2rem;
+      color: var(--Third-Color);
+      font-family: sans-serif;
+      font-size: 1.3rem;
+      margin-top: 3rem;
+      margin-right: 11rem;
+    }
+  
+    .about {
+        padding: 2rem;
+    }
+  
+    
