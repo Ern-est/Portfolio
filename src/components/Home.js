@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Blob from './Blob';
 import ernestImage from '../assets/Cheruu.png';
-import { FaTwitter, FaInstagram, FaFacebook, FaWhatsapp, FaArrowRight } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
-function Home() {
+const Home = () => {
   const [showBlob, setShowBlob] = useState(false);
 
   useEffect(() => {
@@ -18,29 +18,22 @@ function Home() {
 
   return (
     <section className="home-section">
-      <div className="text-container">
+      <div className="left-section">
         <p className="name">
           <span>I'm a </span>
-          <span className='gradient-text'>Full-stack developer</span>
+          <span className="gradient-text">Full-stack Developer</span>
         </p>
-        {/* Add unique animation class to name for cool animation */}
+        
       </div>
       <div className="image-container">
         <Blob />
         <img src={ernestImage} alt="" className="profile-image" />
       </div>
-      <div className="social-media-container">
+      <div className="right-section">
+      <span className="haed">Services</span>
         <p className="service-text">
-          <span className='haed'>Services</span>
-          <span>Let's build quality products in </span>
-          <span>programming and design </span>
-          <span>with my service.</span>
+        Let's build quality products in programming and design by leveraging my expertise. I am dedicated to delivering exceptional results.
         </p>
-        <div className="show-more">
-        <a href="/projects">
-          Show More <FaArrowRight />
-        </a>
-      </div>
         <div className="social-media-icons">
           <a href="https://twitter.com/pro_code_.">
             <FaTwitter color="#1DA1F2" />
@@ -58,6 +51,6 @@ function Home() {
       </div>
     </section>
   );
-}
+};
 
 export default Home;
