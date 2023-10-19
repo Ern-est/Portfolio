@@ -1,34 +1,41 @@
 import React from 'react';
-import './About.css';
-import profileImage from '../assets/me.png';
+import Hernest from '../assets/me.png'
+import './About.css'
 
 const About = () => {
   return (
-    <div className="about">
-      <h2>About <span>Me</span></h2>
-      <div className="split-about">
-        {/* Left section */}
-        <div className="left-aboutsection">
-          {/* Content for left section */}
-          <div className="about-grid">
-            <img src={profileImage} alt="Profile" className="profile-image" />
-            <div className="about-text">
-              <p>
-                Hello! I'm Ernest, a freelance developer passionate about creating innovative and user-friendly web and mobile applications. With several years of experience, I specialize in UI/UX design, web development, and mobile app development.
-              </p>
-              <p>
-                I strive to deliver high-quality solutions that meet clients' requirements and exceed their expectations. I love taking on new challenges and continuously expanding my skill set to stay up-to-date with the latest industry trends and technologies.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        {/* Right section */}
-        <div className="right-aboutsection">
-          {/* Content for right section */}
-        </div>
-      </div>
+    <div className="about">
+    <h2 className="about-title">About Us</h2>
+
+          <div className="split-about">
+          {/* Left section */}
+          <div className="left-aboutsection">
+              {/* content for left section */}
+              <div className='about-card'>
+                  <img src={Hernest}  alt='me' className='about-img'/>
+              </div>
+             
+             
+          </div>
+
+          {/* Right section */}
+          <div className="right-aboutsection">
+              {/* content for right section */}
+              <div className="about-text">
+              <p>We are a recipe website dedicated to providing delicious and healthy meal ideas.</p>
+                <p>Our team of expert chefs and nutritionists work hard to ensure that each recipe is not only tasty, but also packed with nutrients.</p>
+                <p>Whether you're a beginner or a seasoned cook, our recipes are easy to follow and guaranteed to satisfy your taste buds.</p>
+                <p>At our website, we believe that eating healthy should not mean sacrificing taste. That's why we strive to create recipes that are both nutritious and delicious.</p>
+                <p>We understand that life can get busy, and sometimes it's hard to find the time to cook. That's why we offer a variety of quick and easy recipes that can be prepared in under 30 minutes.</p>
+                {/* <p>In addition to our recipes, we also offer a wealth of information on nutrition and healthy eating. Our blog features articles on topics such as meal planning, food prep, and healthy eating habits.</p> */}
+                <p>Thank you for visiting our website, and we hope that our recipes and resources can help you on your journey towards a healthier and happier life!</p>
+              </div>
+              
+          </div>
+          </div>
     </div>
+
   );
 }
 

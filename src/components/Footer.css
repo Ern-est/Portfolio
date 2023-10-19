@@ -2,7 +2,7 @@
     background-color: #8f729c4b;
     padding: 20px 0;
     text-align: center;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
   }

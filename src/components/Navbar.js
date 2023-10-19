@@ -1,34 +1,37 @@
-import React from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../src/assets/Anest.png';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar${showMenu ? ' show-menu' : ''}`}>
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
-      <ul className="nav-items">
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <ul className={`nav-items${showMenu ? ' show-items' : ''}`}>
         <li>
-          <ScrollLink to="home" smooth={true} duration={500} offset={-80}>
-            Home
-          </ScrollLink>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <ScrollLink to="about" smooth={true} duration={500} offset={-80}>
-            About
-          </ScrollLink>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <ScrollLink to="service" smooth={true} duration={500} offset={-80}>
-            Services
-          </ScrollLink>
+          <Link to="/service">Service</Link>
         </li>
         <li>
-          <ScrollLink to="testimonials" smooth={true} duration={500} offset={-80}>
-            Testimonials
-          </ScrollLink>
+          <Link to="/testimonials">Testimonials</Link>
         </li>
       </ul>
     </nav>

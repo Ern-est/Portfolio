@@ -102,3 +102,25 @@
 .social-media-icons a:hover {
   color: yellow;
 }
+/* Styles for the bar */
+
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 200px;
+  width: 100px;
+  padding-left: 40rem;
+}
+
+.bar a {
+  margin: 0 rem;
+  margin: 4;
+}
+
+.bar img {
+  height: 2.5rem;
+  padding-top: 0.5rem;
+  margin: 5rem;
+}

@@ -1,44 +1,79 @@
+/* Navbar Container */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }
 
+/* Logo */
 .logo img {
   height: 5rem;
   width: 8rem;
   margin-left: 1rem;
 }
 
-.nav-items {
-  display: flex;
-  list-style-type: none;
-  margin-right: 45rem;
+/* Menu Icon (Hamburger Icon) */
+.menu-icon {
+  display: none; /* Hide by default for larger screens */
+  cursor: pointer;
 }
 
+/* Navigation List */
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Items */
 .nav-items li {
+  display: inline;
   margin-left: 2rem;
   font-family: sans-serif;
   font-size: 1.2rem;
   cursor: pointer;
-  margin-right: 3rem;
+  color: #fff;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Style Links */
+.nav-items a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
 
-  .nav-items {
-    margin-top: 10px;
-    margin-right: 0;
-  }
+/* Change link color on hover */
+.nav-items a:hover {
+  color: #ff6600;
+}
 
-  .nav-items li {
-    margin: 0;
-    padding: 0.5rem;
-    font-size: 14px;
-  }
+/* Styles for the responsive menu */
+.show-menu .menu-icon {
+  display: block; /* Show the menu icon */
+}
+
+.show-items .nav-items {
+  display: block; /* Show the menu items vertically */
+}
+
+/* Styles for the menu icon bars */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.show-menu .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.show-menu .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.show-menu .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-4px, -5px);
 }

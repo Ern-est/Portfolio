@@ -1,95 +1,52 @@
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-h2 {
-  font-size: 2rem;
-  text-align: center;
-
-}
-
-h2 span {
-  color: #ff6f00;
-}
 
 .split-about {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: -10%;
-}
-
-.left-aboutsection {
-  display: flex;
-  align-items: center;
-  margin-right: 2rem;
-}
-
-.about-grid {
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-}
-
-.profile-image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 2rem;
-}
-
-.about-text {
-  font-size: 1.3rem;
   font-family: sans-serif;
-  height: auto;
-  overflow: hidden;
-  text-align: justify;
 }
 
-.about-text p {
-  margin-bottom: 1rem;
+.left-aboutsection{
+  width: 60%;
+
+}
+.right-aboutsection{
+  width: 40%;
 }
 
-.right-aboutsection {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .about {
-    padding: 1rem;
-  }
-
-  .split-about {
-    flex-direction: column;
+.about-content {
+    display: flex;
     align-items: center;
-  }
+  }   
+  .about-img{
+    flex: 0 0 auto; /*disable flex grow and shrink */
+    height: 540px;
+    width: 500px;
+    margin-left: 60px;
+    margin-top: 1rem;
+  
+  } 
 
-  .left-aboutsection {
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-
-  .about-grid {
-    max-width: 100%;
-    justify-content: center;
-  }
-
-  .profile-image {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-
-  .about-text {
+  .about-card {
+    padding: 1px;
+    margin: 90px;
+    height: 9rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: -8rem;
+    margin-bottom: 8rem;
   }
-}
+  
+  
+  .about-text {
+    flex: 1 1 auto; /* allow flex grow and shrink } */
+    margin-right: 2rem;
+  font-size: 17px;  }
+
+  .about-title{
+    font-size: 35px;
+    font-family: sans-serif;
+    text-align: center;
+    color: var(--Third-Color);
+    margin-bottom:3rem;
+  }
+
+  

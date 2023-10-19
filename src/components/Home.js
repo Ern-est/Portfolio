@@ -3,7 +3,10 @@ import './Home.css';
 import Blob from './Blob';
 import ernestImage from '../assets/Cheruu.png';
 import { FaTwitter, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
-
+import slack from '../assets/slack.jpg'
+import linkedinLogo from '../assets/linkedin.png';
+import githubLogo from '../assets/GitHub-logo.png';
+import Gmail from '../assets/Gmail-logo.png';
 const Home = () => {
   const [showBlob, setShowBlob] = useState(false);
 
@@ -17,7 +20,8 @@ const Home = () => {
   }, [showBlob]);
 
   return (
-    <section className="home-section">
+    <section>
+    <div className="home-section">
       <div className="left-section">
         <p className="name">
           <span>I'm a </span>
@@ -49,7 +53,23 @@ const Home = () => {
           </a>
         </div>
       </div>
-    </section>
+    </div>
+    <div className="bar">
+    <a href="https://slack.com/Ernest Cheruiyot">
+      <img src={slack} alt="Slack" className="logo-img" />
+    </a>
+    <a href="https://www.linkedin.com">
+      <img src={linkedinLogo} alt="LinkedIn" className="logo-img" />
+    </a>
+    <a href="https://github.com/Ern-est">
+      <img src={githubLogo} alt="GitHub" className="logo-img" />
+    </a>
+    <a href="mailto:anest.developer@gmail.com">
+  <img src={Gmail} alt="Gmail" className="logo-img" />
+</a>
+
+  </div>
+  </section>
   );
 };
 
