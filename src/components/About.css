@@ -1,4 +1,6 @@
-
+.about {
+  padding: 40px;
+}
 
 .split-about {
   display: flex;
@@ -21,7 +23,7 @@
     flex: 0 0 auto; /*disable flex grow and shrink */
     height: 540px;
     width: 500px;
-    margin-left: 60px;
+    margin-left: 90px;
     margin-top: 1rem;
   
   } 
@@ -38,15 +40,18 @@
   
   .about-text {
     flex: 1 1 auto; /* allow flex grow and shrink } */
-    margin-right: 2rem;
+    margin-right: 1rem;
   font-size: 17px;  }
 
   .about-title{
-    font-size: 35px;
+    font-size: 55px;
     font-family: sans-serif;
     text-align: center;
     color: var(--Third-Color);
     margin-bottom:3rem;
+  }
+  .about-title span{
+    color: orangered;
   }
 
   

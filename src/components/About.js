@@ -6,7 +6,7 @@ const About = () => {
   return (
 
     <div className="about">
-    <h2 className="about-title">About Us</h2>
+    <h2 className="about-title">About <span>Me</span></h2>
 
           <div className="split-about">
           {/* Left section */}
@@ -23,13 +23,21 @@ const About = () => {
           <div className="right-aboutsection">
               {/* content for right section */}
               <div className="about-text">
-              <p>We are a recipe website dedicated to providing delicious and healthy meal ideas.</p>
-                <p>Our team of expert chefs and nutritionists work hard to ensure that each recipe is not only tasty, but also packed with nutrients.</p>
-                <p>Whether you're a beginner or a seasoned cook, our recipes are easy to follow and guaranteed to satisfy your taste buds.</p>
-                <p>At our website, we believe that eating healthy should not mean sacrificing taste. That's why we strive to create recipes that are both nutritious and delicious.</p>
-                <p>We understand that life can get busy, and sometimes it's hard to find the time to cook. That's why we offer a variety of quick and easy recipes that can be prepared in under 30 minutes.</p>
-                {/* <p>In addition to our recipes, we also offer a wealth of information on nutrition and healthy eating. Our blog features articles on topics such as meal planning, food prep, and healthy eating habits.</p> */}
-                <p>Thank you for visiting our website, and we hope that our recipes and resources can help you on your journey towards a healthier and happier life!</p>
+              <p>
+        I am a passionate and versatile developer with a strong foundation in full-stack development, a keen eye for UI/UX design, and experience in mobile app development. My journey in the world of technology has equipped me with the skills and knowledge to bring innovative ideas to life.
+      </p>
+      <p>
+        With a background in full-stack development, I am proficient in both front-end and back-end technologies, allowing me to create seamless and responsive web applications. I take pride in crafting user-centric, visually appealing interfaces that enhance the user experience, making UI/UX design an integral part of my skill set.
+      </p>
+      <p>
+        As a mobile developer, I have experience in building cross-platform applications that run smoothly on both iOS and Android. I enjoy the challenge of optimizing performance and user engagement on mobile devices.
+      </p>
+      <p>
+        My commitment to continuous learning and staying up-to-date with industry trends keeps me excited about tackling new challenges and delivering exceptional results. I am enthusiastic about collaborating with teams and clients to create solutions that make a difference.
+      </p>
+      <p>
+        Let's work together to turn ideas into reality. Feel free to reach out to discuss potential projects or collaborations.
+      </p>
               </div>
               
           </div>
